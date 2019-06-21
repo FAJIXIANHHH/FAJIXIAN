@@ -1,0 +1,29 @@
+/*
+创建一个数据库
+数据库名字叫books
+*/
+create database books;
+
+use books;
+/*
+创建一个登录信息表
+表名是login
+*/
+create table login
+(
+logid varchar(10) not null primary key, --logid:登录账号
+password varchar(10) not null, --password：密码
+role varchar(20) not null --role：身份
+);
+/*
+创建一个班级订单表
+表名是booking
+*/
+create table booking
+(
+bookname varchar(20) not null, --bookname:书名
+ISBN varchar(20) not null primary key， --ISBN：书号
+author varchar(10) not null, --author:作者
+
+
+)
